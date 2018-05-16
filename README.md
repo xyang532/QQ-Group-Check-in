@@ -5,7 +5,7 @@ QQ群签到
 requests, PyExecJS
 
 自行运行
-<code>pip install requests, PyExecJS</code>
+<code>pip install requests PyExecJS</code>
 安装依赖库
 
 配合crontab有奇效
