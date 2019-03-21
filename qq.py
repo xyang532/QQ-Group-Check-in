@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-import re, execjs, os
+import re, execjs, os, time
 from requests import Session
 
 '只需填入QQ号，QQ密码，签到群号即可'
@@ -92,12 +92,13 @@ def main():
             'pic_id': '',
             'template_id': '4',
             'bkn': bkn,
-            'text': '云签到', # 签到内容
+            'text': '云签到', #### 签到内容 ####
             'lat': '0',
             'template_data': ''
         }
         web = s.post(url, data=data).text
         print(web)
+        time.sleep(5) #### 签到的间隔，单位秒 ####
         
 def getBKN(skey):
     length = len(skey)
