@@ -97,8 +97,9 @@ def main():
             'template_data': ''
         }
         web = s.post(url, data=data).text
-        print(web)
+        #print(web)
         time.sleep(5) #### 签到的间隔，单位秒 ####
+    print('签到执行完毕')
         
 def getBKN(skey):
     length = len(skey)
